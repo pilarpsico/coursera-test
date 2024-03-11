@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>David Chu's Chine Bistro</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -16,16 +17,36 @@
         <nav id="header-nav" class="navbar navbar-default">
             <div id="container">
                 <div class="navbar-header">
-                    <a href="index.html" class="pull-letf visible-md visible-lg>
+                    <a href="index.html" class="pull-letf visible-md visible-lg">
                         <div id="logo-img" alt="gato dormindo com ursinho de pelúcia"></div>
                     </a>
 
                     <div class="navbar-brand"><!--nav-brand- marca do nome da empresa-->
                     <a href="index.html"> <h1>Vida de Gato</h1></a>
                     <p>
-                        <img src="img/favicon.jpg" width="20px">
-                        <span>pilarpsico</span>
+                        <img src="img/favicon.jpg" width="20px"> pilarpsico
+                   
                     </p></div>
+                
+                    <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#collapsable-nav" aria-expanded="false">
+                        <span class="sr-only"><ion-icon name="menu"></ion-icon></span>
+                        <span class="icon-bar"><a href="fotos.html">oie</a></span>
+                        <span class="icon-bar">ei</span>
+                        <span class="icon-bar">cde</span>
+                    </button>-->
+                   <aside id="menuOculto" class="menuOculto">
+                        <a href="javascript:void(0)" class="btnFechar" onclick="fecharNav()">&times;</a>
+                        <a href="vidadegato.html">Miados</a>
+                        <a href="gatos.html">Os Gatos</a>
+                    </aside>
+
+                    <section id="principal">
+                        <span style="font-size: 30px;cursor: pointer" onclick="abrirNav()">&#9776;</span>
+                       
+                    </section>
+
+                   
                 </div>
          </div>
         </nav>
@@ -33,8 +54,9 @@
 
     
     
-    <script src="./bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
     <script src="./js/jquery-3.7.1.min.js"></script>
+   
     <script src="js/script.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
